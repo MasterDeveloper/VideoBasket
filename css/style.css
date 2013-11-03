@@ -219,6 +219,8 @@ ______________________*/
 		border:1px solid #e5e5e5;
 		margin:0 15px 10px 0;
 	}
+	
+/* New Edition */	
 	.photo-section-2{
 		padding:0;
 		border:none;
@@ -239,7 +241,8 @@ ______________________*/
 		font-weight:bold;
 	}
 	.video-thumb-wrap p{
-		color: #666666;
+		color: #666;
+		line-height:1.2;
 	}
 	.video-thumb-wrap .video-status,
 	.video-thumb-wrap .video-status p{
@@ -254,6 +257,10 @@ ______________________*/
 	.icon-star.yellow{
 		color: #eecc47;
 	}
+	.like-bar{
+		padding-top:5px;
+	}
+/* New Edition */		
 .list-item{
 	margin:0 0 20px 55px;
 }
@@ -269,8 +276,34 @@ ______________________*/
 	border:1px solid #d1cccc;
 	margin:0 0 20px;
 }
+	.section-heading{
+		background-color: #ebebeb;
+		background-image: -moz-linear-gradient(top, #ffffff, #ebebeb);
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+		background-image: -webkit-linear-gradient(top, #ffffff, #ebebeb);
+		background-image: -o-linear-gradient(top, #ffffff, #ebebeb);
+		background-image: linear-gradient(to bottom, #ffffff, #ebebeb);
+		background-repeat: repeat-x;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ebebeb', GradientType=0);
+	}
+	.btn-warning{
+		background-color: #ffa443;
+		background-image: -moz-linear-gradient(top, #ffa443, #ff7501);
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffa443), to(#ff7501));
+		background-image: -webkit-linear-gradient(top, #ffa443, #ff7501);
+		background-image: -o-linear-gradient(top, #ffa443, #ff7501);
+		background-image: linear-gradient(to bottom, #ffa443, #ff7501);
+		background-repeat: repeat-x;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa443', endColorstr='#ff7501', GradientType=0);
+	}
+	.btn-warning:focus,
+	.btn-warning:hover{
+		background: #ff7501;
+		outline:none;
+	}
 	.sidebar-section h3{
-		background:#fff url(../images/sidebar-heading.png);
+		background:url(../images/body-bg.png);
+		border-bottom:1px solid #d1cccc;
 		font-size:18px;
 		color:#025e8e;
 		font-family: 'Open Sans', sans-serif;
