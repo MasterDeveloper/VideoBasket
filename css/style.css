@@ -213,9 +213,9 @@ ______________________*/
 #main{
 	background:#fff;
 	padding:15px;
-	-moz-border-radius:7px;
-	-webkit-border-radius:7px;
-	border-radius:7px;
+}
+#main.index-main{
+	padding-top:30px;
 }
 	.photo-section{
 		float:left;
@@ -288,6 +288,7 @@ ______________________*/
 			margin:0 auto;
 		}
 		.video-thumb-wrap .bx-viewport{
+			background:none;
 			border:none;
 			left:0;
 			box-shadow:none;
@@ -747,6 +748,112 @@ a:hover > .img-dull{
 	width: 0;
 	height: 0;
 }
+/* Home Page Styles */
+.video-list{
+}
+	.video-list h4{
+		color: white;
+		font-weight:bold;
+		font-size:20px;
+		margin-bottom:13px;
+	}
+	.video-list .video-status a{
+		color: #7ad7ff;
+	}
+	.video-list .video-status p{
+		color:white;
+	}
+	.video-list .number{
+		float:left;
+		margin-right:10px;
+	}
+	.video-list .video-rated-info{
+		margin-left:135px;
+	}
+	.video-list p{
+		color:white;
+	}
+	.video-list	.video-rated li{
+		border-bottom:1px groove #199edf;
+		padding-bottom:15px;
+		margin-bottom:15px;
+	}
+	.video-list	.video-rated li:last-child{
+		margin-bottom:0;
+		padding-bottom:0;
+		border-bottom:none;
+		
+	}
+	.video-list	.large-video{
+		float:left;
+		padding:8px;
+		-moz-border-radius:0;
+		-webkit-border-radius:0;
+		border-radius:0;
+		background:white;
+		margin-bottom:0;
+	}
+	
+.slider-shadow{
+	background:url(../images/slider-shadow.png) no-repeat center bottom #333333;
+	background-size:100% auto;
+	padding:15px;
+	padding-bottom:25px;
+}
+.home-page-carosel{
+	border-top:1px solid #626161;
+	padding:10px;
+	background:#3d3b3b;
+	margin-right:-15px;
+	margin-left:-15px;
+	margin-bottom:-15px;
+	position:relative;
+	box-shadow:0 0 5px #000;
+}
+.home-page-carosel .bx-prev{
+	left:-40px;
+}
+.home-page-carosel .photo-section-2 img{
+	margin-bottom:0;
+}
+.right-corner{
+	position:absolute;
+	right:0;
+	top:100%;
+}
+.left-corner{
+	position:absolute;
+	left:0;
+	top:100%;
+}
+
+.bx-wrapper .bx-next{
+	right:-40px;
+}
+.navigation{
+	-moz-border-radius:7px 7px 0 0;
+	-webkit-border-radius:7px 7px 0 0;
+	border-radius:7px 7px 0 0;
+	overflow:hidden;
+}
+.navigation > li{
+	border-right:1px inset #25a4f6;
+	width:140px;
+}
+.navigation > li > a:focus,
+.navigation > li >  a:hover,
+.navigation > li >  a{
+	color: #fff;
+	background:none;
+}
+.navigation > li > a:focus,
+.navigation > li >  a:hover{
+	background:#333;
+}
+
+.navigation{
+}
+
 
 /* Alignments */
 .center { text-align:center }
