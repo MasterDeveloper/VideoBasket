@@ -11,7 +11,7 @@ body, input, select, textarea{
 	line-height:1.3;
 }
 body{
-	background:#141414 url(../images/body-bg.png);
+	background:url(../images/body-bg.png) #000;
 }
 
 /* Headings
@@ -203,8 +203,12 @@ ______________________*/
 /*  Main Area
 -------------------------------------- */
 #main-wrap{
+	background:url(../images/main-wrap.png) repeat-x #000;
 	padding-top:20px;
 	margin:0 0 40px;
+}
+.pattren-bg{
+	background:url(../images/body-bg.png);
 }
 #main{
 	background:#fff;
