@@ -813,7 +813,12 @@ a:hover > .img-dull{
 }
 .home-page-carosel .bx-prev{
 	left:-40px;
+	opacity: 1 !important;
 }
+.home-page-carosel .bx-next{
+	opacity: 1 !important;
+}
+
 .home-page-carosel .photo-section-2 img{
 	margin-bottom:0;
 }
