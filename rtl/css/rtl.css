@@ -84,8 +84,10 @@ text-right
 	text-align:left;
 }
 /*  default-theme-for-rtl  */
-
-.video-thumb-wrap .bx-wrapper,
+.rtl #main-wrap{
+	overflow:hidden;
+}
+.rtl .video-thumb-wrap .bx-wrapper,
 .rtl  .home-page-carosel{
 	direction:ltr;
 }
