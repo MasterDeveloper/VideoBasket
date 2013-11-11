@@ -52,7 +52,14 @@
 				slideMargin: 10,
 				pager	:	false
 			});
-		})
+			$('h2 .next').click(function(){
+				$('.bx-next').trigger('click');
+			});
+			$('h2 .prev').click(function(){
+				$('.bx-next').trigger('click');
+			});
+		});
+		
     </script>
     
     
@@ -165,8 +172,8 @@
                         <h2>
                         	<span>More Videos from this Category</span>
                             <span class="pull-right">
-                            	<span class="icon-chevron-left gray-color"></span>
-                                <span class="icon-chevron-right"></span>
+                            	<span class="icon-chevron-left next gray-color"></span>
+                                <span class="icon-chevron-right prev"></span>
                             </span>
                        </h2>
 						<div class="clearfix video-thumb-wrap video-thumb-wrap-2 ">

@@ -32,6 +32,12 @@ h2{
 		display:inline-block;
 		padding-right:5px;
 	}
+	h2 .next{
+		cursor:pointer;
+	}
+	h2 .prev{
+		cursor:pointer;
+	}
 	h2 [class^="icon-"]{
 		font-size:22px;
 		line-height:1.8em;
@@ -233,6 +239,8 @@ ______________________*/
 	}
 	.photo-section-2 a{
 		color:black;
+		display:block;
+		position:relative;
 	}
 	.photo-section-2 a:hover{
 		text-decoration:none;
@@ -251,6 +259,11 @@ ______________________*/
 	.thumbnail-wrap	.thumbnail{
 		padding:8px;
 		position:relative;
+	}
+	.thumbnail a:hover{
+		text-decoration:none;
+		
+	
 	}
 	.thumbnail-wrap	.thumb-title{
 		line-height:30px;
@@ -544,6 +557,9 @@ ______________________*/
 			.video-rated-photo a:hover{
 				text-decoration:none;
 			}
+		.video-rated-photo a{
+			position:relative;
+		}
 			a:hover .icon-play{
 				opacity:1;
 				filter:alpha (opacity=100);

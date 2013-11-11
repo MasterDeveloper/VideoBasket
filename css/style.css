@@ -32,6 +32,12 @@ h2{
 		display:inline-block;
 		padding-right:5px;
 	}
+	h2 .next{
+		cursor:pointer;
+	}
+	h2 .prev{
+		cursor:pointer;
+	}
 	h2 [class^="icon-"]{
 		font-size:22px;
 		line-height:1.8em;
