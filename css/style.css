@@ -642,6 +642,9 @@ ______________________*/
 		line-height:1.4;
 		padding:0 0 5px 17px;
 	}
+	.rtl .cat-list li{
+		background:url(../images/list-arrow-rtl.png) right 4px no-repeat;
+	}
 	.cat-list li a{
 		color:#5e5e5e;
 	}
@@ -713,6 +716,9 @@ a:hover > .img-dull{
 		#footer .footer-list li{
 			background:url(../images/footer-list.png) left 6px no-repeat;
 			padding-left:15px;
+		}
+		.rtl #footer .footer-list li{
+			background:url(../images/footer-list-rtl.png) right 6px no-repeat;
 		}
 	#footer .social-bar a{
 		position:relative;
@@ -852,25 +858,43 @@ a:hover > .img-dull{
 .bx-wrapper .bx-next{
 	right:-40px;
 }
-.navigation{
+.theme-navigation{
 	-moz-border-radius:7px 7px 0 0;
 	-webkit-border-radius:7px 7px 0 0;
 	border-radius:7px 7px 0 0;
 	overflow:hidden;
+	border:none;
+	margin:0;
+	min-height:inherit;
+}
+.navbar-inverse .navbar-toggle{
+	background: #333;
+	overflow:hidden;
+}
+.navbar-collapse{
+	border-top:none;
+}
+.navbar-nav{
+	margin:0 -15px;
+}
+.navigation{
 }
 .navigation > li{
 	border-right:1px inset #25a4f6;
 	width:140px;
 }
-.navigation > li > a:focus,
-.navigation > li >  a:hover,
-.navigation > li >  a{
+
+.theme-navigation .navigation > li > a:focus,
+.theme-navigation .navigation > li >  a:hover,
+.theme-navigation .navigation > li >  a{
 	color: #fff;
 	background:none;
 	font-size:14px;
+	padding:10px 15px;
+	text-align:center;
 }
-.navigation > li > a:focus,
-.navigation > li >  a:hover{
+.theme-navigation .navigation > li > a:focus,
+.theme-navigation .navigation > li >  a:hover{
 	background:#333;
 }
 
@@ -898,10 +922,17 @@ a:hover > .img-dull{
 
 @media (max-width: 979px) { 
 #header{
-	padding:15px 0;
+	padding:25px 0;
 }
 	#header .input-group   {
-		margin-bottom: 15px;
+		margin-top: 0;
+
+	}
+	.logo{
+		margin-top:0;
+	}
+	.header-right p{
+		padding-bottom:0;
 	}
 
 #categories .row{
@@ -934,6 +965,15 @@ a:hover > .img-dull{
 }
 
 @media (max-width: 767px) { 
+.home-page-carosel{
+	display:none;
+}
+#header{
+	padding:15px 0;
+}
+#header .input-group   {
+	margin:15px 0;
+}
 	.navigation > li    {
 		width: auto;
 		border:none;
@@ -960,6 +1000,11 @@ a:hover > .img-dull{
 }
 
 @media (max-width: 479px) { 
+.logo{
+	width:80%;
+	margin:0 auto 20px;
+
+}
 .photo-section{
 	float:none;
 	margin:0 0 15px !important;

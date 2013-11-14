@@ -45,7 +45,6 @@ float: right;
 }
 .rtl .pagination > li > a,
 .rtl .pagination > li > span{
-	float:right;
 	 margin-left: 0;
 	  margin-right: -1px;
 }
@@ -194,6 +193,16 @@ text-right
 	float:none !important;
 	width: auto;
 }
+.rtl .navbar-nav{
+	float:none;
+}
+.rtl .navbar-toggle{
+	margin-right:0;
+	margin-left:15px;
+	float:left;
+}
+
+
 
 @media (max-width: 767px) {
 .rtl .row > div{
@@ -217,8 +226,12 @@ text-right
 	text-align:right;
 }
 
-
-
+.rtl .section-heading .row [class^="col-xs"]{
+	float:right;
+}
+.theme-tabs-wrap{
+	margin-bottom:20px;
+}
 /* Addtion style for web not global */
 .rtl .vertical-align .right-col,
 .rtl .vertical-align .left-col{
