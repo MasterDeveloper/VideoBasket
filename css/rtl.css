@@ -183,6 +183,9 @@ text-right
 	float:right;
 	margin:0 0 0 10px;
 }
+.rtl .close{
+	float:left;
+}
 
 @media (max-width: 979px) {
 .rtl .cat-list{	
