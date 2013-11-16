@@ -90,6 +90,60 @@ ______________________*/
 	.header-right{
 		text-align:right;
 	}
+	.header-right{
+		text-align:right;
+		
+	}
+.header-right .btn-primary {
+  color: #ffffff;
+  background-color: #2c539e;
+  border-color: #244387;
+  background-image: -webkit-gradient(linear, 0 left, 100% center, from(#2c539e), to(#244387));
+  background-image: -webkit-linear-gradient(bottom, color-stop(#2c539e) 0), color-stop(#244387) 100%));
+  background-image: -moz-linear-gradient(bottom, #2c539e 0, #244387 100%);
+  background-image: linear-gradient(to bottom, #2c539e 0, #244387 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c539e', endColorstr='#244387', GradientType=1);
+  border-radius: 6px;
+  padding:4px 10px;
+
+}
+
+.header-right .btn-primary:hover,
+.header-right .btn-primary:focus,
+.header-right .btn-primary:active,
+.header-right .btn-primary.active,
+.header-right .open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #3276b1;
+  border-color: #285e8e;
+}
+
+.header-right .btn-primary:active,
+.header-right .btn-primary.active,
+.header-right .open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+
+.header-right .btn-primary.disabled,
+.header-right .btn-primary[disabled],
+.header-right fieldset[disabled] .btn-primary,
+.header-right .btn-primary.disabled:hover,
+.header-right .btn-primary[disabled]:hover,
+.header-right .header-right fieldset[disabled] .btn-primary:hover,
+.header-right .btn-primary.disabled:focus,
+.header-right .btn-primary[disabled]:focus,
+.header-right fieldset[disabled] .btn-primary:focus,
+.header-right .btn-primary.disabled:active,
+.header-right .btn-primary[disabled]:active,
+.header-right fieldset[disabled] .btn-primary:active,
+.header-right .btn-primary.disabled.active,
+.header-right .btn-primary[disabled].active,
+.header-right .header-right fieldset[disabled] .btn-primary.active {
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
 	#header .input-group{
 		margin-top:34px;
 	}
@@ -915,7 +969,7 @@ a:hover > .img-dull{
 
 /* SignUp/Login */
 .model-wrap{
-	max-width:800px;
+	max-width:600px;
 	margin:15px auto;
 	background:white;
 	border:5px solid #025E8E;
@@ -978,9 +1032,6 @@ a:hover > .img-dull{
 .video-thumb-wrap br{
 	display:none;
 }
-.model-wrap{
-	margin:15px;
-}
 }
 
 @media (max-width: 767px) { 
@@ -1016,6 +1067,13 @@ a:hover > .img-dull{
 .list-item{
 	margin-left: 25px;
 }	
+
+
+/* SignUp/Login */
+.model-wrap{
+	margin:15px;
+}
+
 }
 
 @media (max-width: 479px) { 
