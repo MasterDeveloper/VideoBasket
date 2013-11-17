@@ -398,7 +398,9 @@ ______________________*/
 	}
 	.like-bar{
 		padding-top:5px;
+		white-space:nowrap;
 	}
+	
 	
 .border-bottom{
 	border-bottom:1px solid #e7e7e7;
@@ -992,6 +994,13 @@ a:hover > .img-dull{
 .middle { vertical-align:middle }
 
 @media (max-width: 979px) { 
+.fb-like-wrap .right-col,
+.fb-like-wrap .left-col{
+	padding:0;
+}
+}
+
+@media (max-width: 979px) { 
 #header{
 	padding:25px 0;
 }
@@ -1031,6 +1040,21 @@ a:hover > .img-dull{
 }
 .video-thumb-wrap br{
 	display:none;
+}
+.fb-like-wrap .right-col,
+.fb-like-wrap .left-col{
+	display:block;
+	text-align:left;
+	padding:0;
+}
+.fb-like-wrap .right-col,
+.fb-like-wrap .left-col{
+	text-align:right;
+}
+
+.fb-like-wrap{
+	display:block;
+	overflow:hidden;
 }
 }
 
@@ -1081,10 +1105,6 @@ a:hover > .img-dull{
 	width:80%;
 	margin:0 auto 20px;
 
-}
-.photo-section{
-	float:none;
-	margin:0 0 15px !important;
 }
 #main-wrap{
 	margin-bottom:15px;

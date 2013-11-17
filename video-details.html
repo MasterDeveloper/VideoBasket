@@ -71,6 +71,7 @@
 		
     </script>
     
+
     
     
     
@@ -98,7 +99,7 @@
                 	<div class="header-right">
                     	<p>
                         	<a href="#myModal" role="button"  data-toggle="modal" class="btn btn-primary btn-sm">Login</a>
-                            <a href="#myModal" role="button"  data-toggle="modal"  class="btn btn-primary btn-sm">Sign up</a>
+                            <a href="#myModal-2" role="button"  data-toggle="modal"  class="btn btn-primary btn-sm">Sign up</a>
                         </p>
                         <div class="social-bar hidden-sm hidden-xs">
                             <a class="facebook" href="#"><span class="icon-facebook"></span></a>
@@ -149,9 +150,18 @@
                         <h2><span>Armpit Cream Gag</span><span class="pull-right"><span class="icon-chevron-left gray-color"></span><span class="icon-chevron-right"></span></span></h2>
                         <p class="border-bottom">Posted in: Just for <a href="#">Laughs Gags</a> | Duration : 01:16 mins</p>
                         <div class="border-bottom">
-                        	<div class="vertical-align">
+                        	<div class="vertical-align fb-like-wrap">
                                 <div class="left-col">
-                                    <img src="images/fb-like.png" alt="" />
+									<div id="fb-root"></div>
+									<script>(function(d, s, id) {
+										  var js, fjs = d.getElementsByTagName(s)[0];
+										  if (d.getElementById(id)) return;
+										  js = d.createElement(s); js.id = id;
+										  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1427754394118810";
+										  fjs.parentNode.insertBefore(js, fjs);
+										}(document, 'script', 'facebook-jssdk'));
+										</script>
+                                    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
                                 </div>
                                 <div class="right-col text-right">
                                 	<div class="like-bar">
@@ -233,7 +243,15 @@
                             </ul>
                         </div><!-- clearfix video-thumb-wrap -->
                         <h3>Comments</h3>
-                        <img src="images/comments-box.png" alt="" />
+                        <div id="fb-root"></div>
+						<script>(function(d, s, id) {
+						  var js, fjs = d.getElementsByTagName(s)[0];
+						  if (d.getElementById(id)) return;
+						  js = d.createElement(s); js.id = id;
+						  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1427754394118810";
+						  fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));</script>
+						<div class="fb-comments" data-href="http://www.facebook.com" data-numposts="5"></div>
 		            </div><!--contents -->
                     <div class="col-sm-4" id="sidebar">
                     	<div class="sidebar-section">
@@ -437,12 +455,36 @@
 <div class="model-wrap">
     <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Log In / Sign Up</h3>
+    <h3 id="myModalLabel">Log In</h3>
     </div>
     <div class="modal-body">
         <form  class="row">
-            <div class="col-sm-6 col-border">
-                <h3>Sign Up</h3>
+            <div class="col-sm-12">
+            <label>Enter Your Email Address</label>    
+            <p><input type="text" placeholder="Plese Enter Your Email Address" class="form-control"></p>
+            <label>Enter Your Password</label>    
+            <p><input type="text" placeholder="Password" class="form-control"></p>
+            <p class="clearfix"><button class="btn btn-primary col-sm-6">Log In</button></p>
+            <p><label>OR</label></p>
+            <p class="clearfix"><button class="btn btn-primary col-sm-6"><span class="icon-facebook"></span> Log In with Facebook</button></p>
+            <p class="clearfix"><button class="btn btn-info col-sm-6"><span class="icon-twitter"></span> Log In with Twitter </button></p>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+
+
+<div id="myModal-2" class="modal fade signin-model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="model-wrap">
+    <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Sign Up</h3>
+    </div>
+    <div class="modal-body">
+        <form  class="row">
+            <div class="col-sm-12">
                 <label>Name</label>    
                 <p><input type="text" placeholder="Full Name" class="form-control"></p>
                 <label>User Name</label>    
@@ -453,18 +495,7 @@
                 <p><input type="text" placeholder="Password" class="form-control"></p>
                 <label>Confirm Password</label>    
                 <p><input type="text" placeholder="Confirm Password" class="form-control"></p>
-                <button class="btn btn-primary col-lg-6">Sign Up</button>
-            </div>
-            <div class="col-sm-6">
-            <h3>Log In</h3>
-            <label>Enter Your Email Address</label>    
-            <p><input type="text" placeholder="Plese Enter Your Email Address" class="form-control"></p>
-            <label>Enter Your Password</label>    
-            <p><input type="text" placeholder="Password" class="form-control"></p>
-            <p class="clearfix"><button class="btn btn-primary col-lg-6">Log In</button></p>
-            <p><label>OR</label></p>
-            <p class="clearfix"><button class="btn btn-primary col-lg-8"><span class="icon-facebook"></span> Log In with Facebook</button></p>
-            <p class="clearfix"><button class="btn btn-info col-lg-8"><span class="icon-twitter"></span> Log In with Twitter </button></p>
+                <button class="btn btn-primary col-sm-6 col-xs-6">Sign Up</button>
             </div>
         </form>
     </div>
